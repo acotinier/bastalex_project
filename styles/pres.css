@@ -1,0 +1,24 @@
+.pres_section{
+    text-align: center;
+    margin-top: 9em;
+    transition: all 0.5s;
+}
+.pres_section .pres_title{
+    font-family: 'Permanent Marker';
+    color: aliceblue;
+    letter-spacing: 1.1em;
+    padding-left: 0.9em;
+    text-transform: uppercase;
+    font-size: 4em;
+}
+.pres_section .pres_descr{
+    margin: auto;
+    font-family: 'Tilt Neon';
+    color: aliceblue;
+    font-size: 1.5em;
+    max-width: 700px;
+}
+.pres_section hr{
+    width: 600px;
+    margin-bottom: 3.5em;
+}

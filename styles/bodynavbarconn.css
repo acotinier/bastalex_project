@@ -1,0 +1,52 @@
+body{
+    background-color: rgb(0, 0, 0);
+    margin: 0;
+    font-family: 'Roboto';}
+
+.navbar {
+    background-color: aliceblue;
+    height: 70px;
+    box-shadow: 0 0px 100px aliceblue;
+    display: flex;
+    display: inline-block;
+    width: 100%;
+}
+.divhome{
+    height: 100%;
+    width: 70px;
+    border-radius: 50%;
+    float: left;
+}
+.divhome *{
+    position: absolute;
+    margin: 9px;
+}
+.atop{
+    opacity: 0;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.divhome:hover > .atop {
+    opacity: 1;
+    transition: all 0.5s;
+}
+
+.navbar .divcon{
+    display: flex;
+    text-align: center;
+    width: 70px;
+    height: 70px;
+    cursor: pointer;
+    float:right;
+    border-radius: 50%;
+}
+.navbar .divcon *{
+    width: 40px;
+    height: auto;
+    position: absolute;
+    margin: 13px;
+}
+.btop{
+    opacity: 1;
+    transition: all 0.5s;
+}

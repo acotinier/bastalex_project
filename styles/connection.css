@@ -1,0 +1,60 @@
+.conn_section{
+    text-align: center;
+    margin-top: 5em;
+    transition: all 0.5s;
+}
+.conn_section .conn_title{
+    font-family: 'Permanent Marker';
+    color: aliceblue;
+    letter-spacing: 0.75em;
+    padding-left: 0.9em;
+    text-transform: uppercase;
+    font-size: 2em;
+}
+.conn_section hr{
+    width: 440px;
+    margin-bottom: 3.5em;
+}
+
+.conn_section .conn_form{
+    display: grid;
+    justify-items: center;
+}
+
+.conn_section .conn_form input{
+    width: 20em;
+    margin-bottom: 50px;
+    color: aliceblue;
+    font-size: 18px;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-bottom: 2px solid aliceblue;
+    line-height: 50px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all 0.5s;
+}
+.conn_section .conn_form input:focus{
+    outline: none;
+    border-bottom: 2px solid rgb(255, 64, 64);
+    transition: all 0.5s;
+}
+.conn_section .conn_form button{
+    border-radius: 0px;
+    font-size: 18px;
+    color: aliceblue;
+    border: 1px solid aliceblue;
+    background-color: rgba(0, 0, 0, 0);
+    cursor: pointer;
+    transition: all 0.5s;
+}
+.conn_section .conn_form button:hover{
+    color: rgb(109, 255, 64);
+    border: 1px solid rgb(122, 255, 81);
+    border-radius: 50px;
+    transition: all 0.5s;
+}
+.conn_section .conn_form span{
+    line-height: 2.5em;
+    margin: 1em;
+}
