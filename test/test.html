@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="test.css">
+  <link rel="stylesheet" href="flipbox.css">
+  <script src="script.js"></script>
+  <link href='https://fonts.googleapis.com/css?family=Tilt+Neon' rel='stylesheet'>
+  <title>Document</title>
+</head>
+<body>
+  <!-- <button onclick="testF()">test</button> -->
+  <div class="rows">
+    <span class="connx" onclick="flipToConn()">Connexion</span>
+    <span>|</span>
+    <span class="inscr"onclick="flipToInscr()">Inscription</span>
+  </div>
+  <div class="flip-box">
+    <div id="flip-box-inner" class="flip-box-inner">
+      <div class="flip-box-front">
+        <h2>Connexion</h2>
+        <p>rouge</p>
+      </div>
+      <div class="flip-box-back">
+        <h2>Inscription</h2>
+        <p>bleu</p>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>
