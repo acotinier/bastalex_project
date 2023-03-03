@@ -15,10 +15,12 @@ body{
   cursor: pointer;
   font-size: 24px;
   margin-left: 20px;
+  transition: all 0.5s;
 }
 .activeflip{
   color: black;
 }
 .nonactiveflip{
-  color: grey;
+  color: rgb(151, 151, 151);
+  transition: all 0.5s;
 }
