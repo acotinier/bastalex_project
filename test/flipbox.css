@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-box {
     background-color: transparent;
@@ -68,4 +71,20 @@
     background-color: rgba(30, 143, 255, 0.445);
     color: black;
     transform: rotateY(180deg);
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .buttonhome {
+    padding: 15px;
+    border: solid 1px rgb(169,169,169);
+    border-radius: 25px;
+  }
+  .buttonhome:hover {
+    cursor: pointer;
+    border: solid 1px rgb(0,0,0);
+    
   }

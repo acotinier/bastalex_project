@@ -13,20 +13,22 @@
 </head>
 <body>
   <!-- <button onclick="testF()">test</button> -->
-  <div class="rows">
-    <span id="labelconn" class="connx" onclick="flipToConn()">Connexion</span>
-    <span>|</span>
-    <span id="labelinscr" class="inscr nonactiveflip"onclick="flipToInscr()">Inscription</span>
-  </div>
-  <div class="flip-box">
-    <div id="flip-box-inner" class="flip-box-inner">
-      <div class="flip-box-front">
-        <h2>Connexion</h2>
-        <p>rouge</p>
-      </div>
-      <div class="flip-box-back">
-        <h2>Inscription</h2>
-        <p>bleu</p>
+  <div class="flex-container">
+    <div class="rows">
+      <span id="labelconn" class="connx buttonhome" onclick="flipToConn()">Connexion</span>
+      <span>|</span>
+      <span id="labelinscr" class="inscr nonactiveflip buttonhome"onclick="flipToInscr()">Inscription</span>
+    </div>
+    <div class="flip-box">
+      <div id="flip-box-inner" class="flip-box-inner">
+        <div class="flip-box-front">
+          <h2>Connexion</h2>
+          <p>rouge</p>
+        </div>
+        <div class="flip-box-back">
+          <h2>Inscription</h2>
+          <p>bleu</p>
+        </div>
       </div>
     </div>
   </div>
