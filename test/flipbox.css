@@ -3,9 +3,10 @@
 }
 /* The flip box container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 .flip-box {
+    flex-direction: column;
     background-color: transparent;
     width: 500px;
-    height: 700px;
+    height: 600px;
     perspective: 4000px; /* Remove this if you don't want the 3D effect */
   }
   
@@ -51,17 +52,18 @@
   
   /* Position the front and back side */
   .flip-box-front, .flip-box-back {
-
     position: absolute;
     width: 100%;
     height: 100%;
     -webkit-backface-visibility: hidden;
     backface-visibility: hidden;
+    border: hidden;
+    border-radius: 15px;
   }
   
   /* Style the front side */
   .flip-box-front {
-    background-color: #ff00004f;
+    background-color: rgb(189, 181, 181);
     color: black;
   }
   
@@ -86,5 +88,77 @@
   .buttonhome:hover {
     cursor: pointer;
     border: solid 1px rgb(0,0,0);
-    
+  }
+  .form-wrap {
+    position: relative;
+  }
+
+  .form-wrap input {
+    width: 80%;
+    height: 60px;
+    font-size: 18px;
+    padding: 0 15px;
+    margin: 35px 0;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    background: transparent;
+    color: #fff;
+    outline: none;
+  }
+  .form-wrap label {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 19px;
+    pointer-events: none;
+    transition: 130ms ease-in;
+  }
+input:focus ~ label,
+input:valid ~ label {
+  top: 35px;
+  left: 20%;
+  border: solid 1px rgb(255,255,255);
+  border-radius: 15px;
+  padding: 0 16px;
+  font-size: 16px;
+  background: rgb(189, 181, 181);
+  }
+  .button {
+    display: inline-block;
+    border-radius: 25px;
+    background-color: #4e433fc9;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    vertical-align:middle;
+  }
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  .button span:after {
+    content: "\00bb";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
   }
