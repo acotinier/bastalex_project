@@ -65,12 +65,13 @@
   .flip-box-front {
     background-color: rgb(189, 181, 181);
     color: black;
+    z-index: 1;
   }
   
   /* Style the back side */
   .flip-box-back {
     backface-visibility: hidden;
-    background-color: rgba(30, 143, 255, 0.445);
+    background-color: rgba(18, 130, 242, 0.722);
     color: black;
     transform: rotateY(180deg);
   }
@@ -89,7 +90,7 @@
     cursor: pointer;
     border: solid 1px rgb(0,0,0);
   }
-  .form-wrap {
+  .form-wrap, .form-sub-wrap {
     position: relative;
   }
 
@@ -99,6 +100,19 @@
     font-size: 18px;
     padding: 0 15px;
     margin: 35px 0;
+    border: 2px solid #fff;
+    border-radius: 25px;
+    background: transparent;
+    color: #fff;
+    outline: none;
+  }
+
+  .form-sub-wrap input {
+    width: 80%;
+    height: 2.3rem;
+    font-size: 18px;
+    padding: 0 10px;
+    margin: 15px 0;
     border: 2px solid #fff;
     border-radius: 25px;
     background: transparent;
@@ -115,6 +129,28 @@
     pointer-events: none;
     transition: 130ms ease-in;
   }
+  .form-sub-wrap label {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translateY(-50%);
+    color: #fff;
+    font-size: 19px;
+    pointer-events: none;
+    transition: 130ms ease-in;
+  }
+
+  .form-sub-wrap input:focus ~ label,
+  .form-sub-wrap input:valid ~ label {
+    top: 20%;
+    left: 20%;
+    border: solid 1px rgb(255,255,255);
+    border-radius: 15px;
+    padding: 2px 16px;
+    font-size: 16px;
+    background: rgb(26, 111, 196);
+  }
+
 input:focus ~ label,
 input:valid ~ label {
   top: 36px;
@@ -123,12 +159,13 @@ input:valid ~ label {
   border-radius: 15px;
   padding: 0 5%;
   font-size: 100%;
-  background: rgb(189, 181, 181);
+  background: rgb(97, 91, 91);
   }
-  .button {
+
+  .flip-box-front button {
     display: inline-block;
     border-radius: 25px;
-    background-color: #4e433fc9;
+    background-color: rgb(97, 91, 91);
     border: none;
     color: #FFFFFF;
     text-align: center;
@@ -140,6 +177,23 @@ input:valid ~ label {
     margin: 5px;
     vertical-align:middle;
   }
+
+  .flip-box-back button {
+    display: inline-block;
+    border-radius: 25px;
+    background-color: rgba(26, 111, 196, 0.64);
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 20px;
+    width: 200px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 5px;
+    vertical-align:middle;
+  }
+
   .button span {
     cursor: pointer;
     display: inline-block;
