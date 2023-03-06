@@ -1,24 +1,40 @@
 .pres_section{
     text-align: center;
-    margin-top: 9em;
+    margin-top: 5%;
     transition: all 0.5s;
 }
 .pres_section .pres_title{
     font-family: 'Permanent Marker';
     color: aliceblue;
-    letter-spacing: 1.1em;
-    padding-left: 0.9em;
+    letter-spacing: 4.5vw;
+    padding-left: 4.5vw;
     text-transform: uppercase;
-    font-size: 4em;
+    margin-bottom: 2%;
+    font-size: 5vh;
 }
 .pres_section .pres_descr{
     margin: auto;
     font-family: 'Tilt Neon';
     color: aliceblue;
-    font-size: 1.5em;
-    max-width: 700px;
+    font-size: 3vw;
+    max-width: 50%;
 }
 .pres_section hr{
-    width: 600px;
+    width: 50%;
     margin-bottom: 3.5em;
 }
+
+@media screen and (max-width: 510px) {
+    /* Insérez vos propriétés CSS ici, avec vos sélecteurs*/
+    .pres_section hr{
+        width: 50%;
+    }
+    .pres_title{
+        letter-spacing: 4vw;
+        font-size: 12vw;
+    }
+    .pres_descr{
+        max-width: 80%;
+        font-size: 15vw;
+    }
+    }

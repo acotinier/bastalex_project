@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -10,8 +11,10 @@
     <link href="styles/bodynavbarconn.css" rel="stylesheet">
     <link href="styles/connection.css" rel="stylesheet">
     <script src="script.js"></script>
+    <script src="flipbox.js"></script>
     <title>Connexion - SNIR24</title>
 </head>
+
 <body>
     <nav class="navbar">
         <div class="divhome" onclick="goToHome()">
@@ -22,15 +25,44 @@
             <embed class="btop" src="assets/user_fill.png">
         </div>
     </nav>
-    <section class ="conn_section">
-        <h1 class="conn_title">Inscription</h1>
-        <hr class="solid">
-        <div class="conn_form">
-            <input type="text" placeholder="Nom d'utilisateur">
-            <input type="password" placeholder="Mot de passe">
-            <input type="password" placeholder="Mot de passe (Confirmation)">
-            <button><span>Connexion</span></button>
+    <div class="flex-container">
+        <div class="rows">
+            <span id="labelconn" class="connx buttonhome" onclick="flipToConn()">Connexion</span>
+            <span>|</span>
+            <span id="labelinscr" class="inscr nonactiveflip buttonhome" onclick="flipToInscr()">Inscription</span>
         </div>
-    </section>
+        <div class="flip-box" form action="#">
+            <div id="flip-box-inner" class="flip-box-inner">
+                <div class="flip-box-front">
+                    <h2>Connexion</h2>
+                    <div class="form-wrap" form action="#">
+                        <input type="text" id="identifiant" required spellcheck="false">
+                        <label for="identifiant">Identifiant</label>
+                    </div>
+                    <div class="form-wrap">
+                        <input type="password" id="password" required spellcheck="false">
+                        <label for="password">Mot de passe</label>
+                    </div>
+                    <button class="button"><span>Valider</span></button>
+                </div>
+                <div class="flip-box-back">
+                    <h2>Inscription</h2>
+                    <div class="form-wrap" form action="#">
+                        <input type="text" id="identifiant" required spellcheck="false">
+                        <label for="identifiant">Identifiant</label>
+                    </div>
+                    <div class="form-wrap">
+                        <input type="password" id="password" required spellcheck="false">
+                        <label for="password">Mot de passe</label>
+                    </div>
+                    <div class="form-wrap">
+                        <input type="password" id="passwordconfirm" required spellcheck="false">
+                        <label for="password">Mot de passe (Confirmation)</label>
+                    </div>
+                    <button class="button"><span>Valider</span></button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

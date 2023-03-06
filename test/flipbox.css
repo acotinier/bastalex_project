@@ -117,12 +117,12 @@
   }
 input:focus ~ label,
 input:valid ~ label {
-  top: 35px;
+  top: 36px;
   left: 20%;
   border: solid 1px rgb(255,255,255);
   border-radius: 15px;
-  padding: 0 16px;
-  font-size: 16px;
+  padding: 0 5%;
+  font-size: 100%;
   background: rgb(189, 181, 181);
   }
   .button {

@@ -7,8 +7,6 @@ body{
     background-color: aliceblue;
     height: 70px;
     box-shadow: 0 0px 100px aliceblue;
-    display: flex;
-    display: inline-block;
     width: 100%;
 }
 .divhome{
@@ -62,4 +60,9 @@ body{
 .divcon:hover > .bbottom{
     opacity: 0;
     transition: all 0.5s;
+}
+@media screen and (max-width: 510px){
+    .navbar{
+        flex-flow: column nowrap;
+    }
 }
